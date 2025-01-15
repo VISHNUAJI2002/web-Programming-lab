@@ -1,0 +1,30 @@
+<html> 
+<head> 
+<title>EventListener</title> 
+<style> 
+button { 
+margin-top: 250px; 
+width: 100px; 
+height: 50px; 
+} 
+</style> 
+</head> 
+<body> 
+<center> 
+<button id="myButton">Click me!</button> 
+<p id="demo"></p> 
+</center> 
+<script> 
+const button = document.getElementById("myButton"); 
+button.addEventListener("click", () => { 
+alert("HELLO"); 
+}); 
+button.addEventListener("mouseover", () => { 
+button.style.backgroundColor = "green"; 
+}); 
+button.addEventListener("mouseout", () => { 
+button.style.backgroundColor = "red";  
+}); 
+</script> 
+</body> 
+</html>

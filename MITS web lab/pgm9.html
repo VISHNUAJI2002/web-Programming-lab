@@ -1,0 +1,42 @@
+<html> 
+<head> 
+<title>Change Background Color</title> 
+<style> 
+body { 
+font-family: Arial, sans-serif; 
+text-align: center; 
+margin: 50px; 
+} 
+button { 
+padding: 10px 20px; 
+font-size: 16px; 
+margin: 10px; 
+} 
+</style> 
+</head> 
+<body> 
+<h1>Change Background Color</h1> 
+<button id="redBtn">Yellow</button> 
+<button id="blueBtn">Orange</button> 
+<button id="greenBtn">Blue</button> 
+<button id="resetBtn">Reset</button> 
+<script> 
+const redButton = document.getElementById('redBtn'); 
+const blueButton = document.getElementById('blueBtn'); 
+const greenButton = document.getElementById('greenBtn'); 
+const resetButton = document.getElementById('resetBtn'); 
+redButton.addEventListener('click', () => { 
+document.body.style.backgroundColor = 'yellow'; 
+}); 
+blueButton.addEventListener('click', () => { 
+document.body.style.backgroundColor = 'orange';
+}); 
+greenButton.addEventListener('click', () => { 
+document.body.style.backgroundColor = 'blue'; 
+}); 
+resetButton.addEventListener('click', () => { 
+document.body.style.backgroundColor = ''; 
+}); 
+</script> 
+</body> 
+</html> 

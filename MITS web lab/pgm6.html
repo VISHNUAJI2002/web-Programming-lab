@@ -1,0 +1,86 @@
+<html> 
+<body> 
+<center> 
+<h3 id="f1"> 
+<form onsubmit="mathfunction(event)"> 
+<label for="mathval">Enter Number:</label> 
+<input type="text" id="mathval" name="mathval"><br><br> 
+<input class="button" type="submit" name="submit" value="Submit"> </form> 
+</h3> 
+<h3 id="mathdemo1"></h3> 
+<h3 id="mathdemo2"></h3> 
+<h3 id="mathdemo3"></h3> 
+<h3 id="mathdemo4"></h3> 
+<h3 id="mathdemo5"></h3> 
+<h3 id="mathdemo6"></h3> 
+<h3 id="mathdemo7"></h3> 
+<h3 id="mathdemo8"></h3> 
+<h3 id="mathdemo9"></h3> 
+<h3 id="mathdemo10"></h3> 
+<h3 id="mathdemo11"></h3> 
+<h3 id="mathdemo12"></h3> 
+<h3 id="mathdemo13"></h3> 
+</center> 
+<script> 
+function mathfunction(event) { 
+event.preventDefault(); 
+let varr=document.getElementById("mathval").value;  
+let varr1=Math.round(varr); 
+let varr2=Math.ceil(varr); 
+let varr3=Math.floor(varr);
+let varr4=Math.trunc(varr); 
+let varr5=Math.sign(varr); 
+let varr6=Math.pow(8,2); 
+let varr7=Math.sqrt(81); 
+let varr8=Math.abs(varr); 
+let varr9=Math.min(0, 150, 30, 20, -8, -200); 
+let varr10=Math.max(0, 150, 30, 20, -8, -200); 
+let varr11=Math.random(); 
+let varr12=Math.log(1); 
+let varr13=Math.log10(1000); 
+document.getElementById("mathdemo1").innerHTML="round(): " + varr; 
+document.getElementById("mathdemo2").innerHTML="ceil(): " + varr2; 
+document.getElementById("mathdemo3").innerHTML="floor(): " + varr3; 
+document.getElementById("mathdemo4").innerHTML="trunc(): " + varr4; 
+document.getElementById("mathdemo5").innerHTML="sign(): " + varr5; 
+document.getElementById("mathdemo6").innerHTML="power(8,2): " + varr6; document.getElementById("mathdemo7").innerHTML="sqrt(81): " + varr7; 
+document.getElementById("mathdemo8").innerHTML="abs(): " + varr8; 
+document.getElementById("mathdemo9").innerHTML="min(0, 150, 30, 20, -8, -200): " + varr9; 
+document.getElementById("mathdemo10").innerHTML="max(0, 150, 30, 20, -8, -200): " +  varr10; 
+document.getElementById("mathdemo11").innerHTML="random(): " + varr11; document.getElementById("mathdemo12").innerHTML="log(1): " + varr12; 
+document.getElementById("mathdemo13").innerHTML="log10(1000):" + varr13; } 
+</script> 
+<center> 
+<h3 id="f1"> 
+<form onsubmit="strfunction(event)"> 
+<label for="stringval">Enter String:</label> 
+<input type="text" id="stringval" name="stringval"><br><br> 
+<input class="button" type="submit" name="submit" value="Submit"> 
+</form> 
+</h3>
+<h3 id="strdemo1"></h3> 
+<h3 id="strdemo2"></h3> 
+<h3 id="strdemo3"></h3> 
+<h3 id="strdemo4"></h3> 
+<h3 id="strdemo5"></h3> 
+<h3 id="strdemo6"></h3> 
+<h3 id="strdemo7"></h3> 
+</center> 
+<script> 
+function strfunction(event) 
+{ 
+event.preventDefault();  
+let val=document.getElementById("stringval").value; 
+let val1=val.length; 
+let val2=val.slice(4,8); 
+let val3=val.substring(0,6); 
+let val4=val.substr(2,5); 
+let val5=val.toUpperCase(); 
+let val6=val.toLowerCase(); 
+let val7="hello"; 
+let val8=val.concat(" ",val7); 
+document.getElementById("strdemo1").innerHTML="length: " + val1; document.getElementById("strdemo2").innerHTML="slice(4,8): " + val2; document.getElementById("strdemo3").innerHTML="substring(0,6): " + val3; document.getElementById("strdemo4").innerHTML="substr(2,5): " + val4; document.getElementById("strdemo5").innerHTML="upper case: " + val5; document.getElementById("strdemo6").innerHTML="lower case: " + val6; document.getElementById("strdemo7").innerHTML="concat hello: " + val8;} </script> 
+</body> 
+</html> 
+</body> 
+</html>

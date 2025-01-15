@@ -1,0 +1,57 @@
+1. RegistrationForm.html 
+<html> 
+<title>Student Registration Form</title> 
+<center><img src="C:\Users\HP\Desktop\mitslogo.jpeg" alt="MITS Logo"></center> 
+<head><h2><center><b> STUDENT REGISTRATION FORM </b></h2></head></center> 
+<fieldset> 
+<legend><b>STUDENT DETAILS</b></legend><br> 
+First Name: <br><input type="text" name="firstname"/> <br><br> Middle Name: <br><input type="text" name="middlename"/> <br><br> 
+Last Name: <br><input type="text" name="lastname"/><br><br> 
+<label for="email">Email: </label><br> 
+<input type="email" id="email" name="email"/> <br><br> 
+<label for="dob">Date of Birth:</label><br> 
+<input type="date" id="dob" name="dob"><br><br> 
+<label for="gender">Gender: </label> 
+<input type="radio" id="gender" name="gender" value="male"/>Male <input type="radio" id="gender" name="gender"  
+value="female"/>Female <br><br>
+</fieldset><br><br> 
+<fieldset> 
+<legend><b>COURSE DETAILS</b></legend><br> Course : <select id="course" name="course"> <option value="Choose" selected>Select a Course </option> <option value="B.tech">B.Tech</option> 
+<option value="M.tech">M.Tech</option> 
+<option value="MCA">MCA</option>  
+</select> <br><br> 
+Semester : <select id="sem" name="sem"> 
+<option value="Choose" selected>Select Semester </option> <option value="s1">SEM 1</option> 
+<option value="s2">SEM 2</option> 
+<option value="s3">SEM 3</option> 
+<option value="s4">SEM 4</option> 
+<option value="s5">SEM 5</option> 
+<option value="s6">SEM 6</option> 
+</select> <br><br> 
+<label for="start">Staring Year:</label><br> 
+<input type="date" id="start" name="start"><br><br> 
+<label for="ending">Ending Year:</label><br> <input type="date" id="end" name="end"><br><br>  </fieldset><br><br> 
+<fieldset> 
+<legend><b>CLUBS</b></legend><br> 
+Select Interested Clubs:<br> 
+<input type="checkbox" id="c1" name="club" value="c"> <label for="c1"> Tech Club</label><br>
+<input type="checkbox" id="c2" name="club" value="c"  <label for="c2"> Music Club</label><br> 
+<input type="checkbox" id="c3" name="club" value="c"  <label for="c3"> Media Club</label><br> 
+<input type="checkbox" id="c4" name="club" value="c"  <label for="c4"> Dance Club</label><br> 
+<input type="checkbox" id="c5" name="club" value="c" <label for="c5"> Maths Club</label><br>  
+</fieldset><br><br> 
+<fieldset> 
+<legend><b>ACCOUNT SETTINGS</b></legend><br> <label for="passd1">Type Password: </label> 
+<input type="password" id="password" name="passd1"> 
+<label for="passd2">Confirm Password: </label> 
+<input type="password" id="passd2" name="password"><br><br> </fieldset><br><br> 
+<input type="submit" value="Submit"> 
+</html> 
+2. mitsSite.html (saved html page directly from MITS site) MITS web page original directly downloaded_HTML 
+3. frame.html 
+<html> 
+<title>Application Form</title>  
+<frameset cols="50%,50%"> 
+<frame src="C:\Users\HP\Desktop\RegistrationForm.html" > <frame src="C:\Users\HP\Desktop\mitsSite.html">
+</frameset> 
+</html> 

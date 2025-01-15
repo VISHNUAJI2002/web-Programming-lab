@@ -1,0 +1,84 @@
+Index.html 
+<html> 
+<head> 
+<title>Online Exam</title> 
+<link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+<h1>Online Exam</h1> 
+<div class="container "> 
+<p>Q1. Which HTML tag is used to create a hyperlink?</p><hr> 
+<input type="radio" name="q1" >link<br> 
+<input type="radio" name="q1" >href<br> 
+<input type="radio" name="q1" id="correct1" >a<br> 
+<input type="radio" name="q1" >hyperlink<br> 
+<br> 
+<input type="button" class="next" value="NEXT" onclick="next(1)"> 
+</div> 
+<div class="container "> 
+<p>Q2. Which of the following is not a web component element?</p><hr> <input type="radio" name="q2" >shadow<br> 
+<input type="radio" name="q2" id="correct2">menu<br> 
+<input type="radio" name="q2" >content<br> 
+<input type="radio" name="q2" >element<br> 
+<br> 
+<input type="button" class="next" value="NEXT" onclick="next(2)"> 
+</div> 
+<div class="container "> 
+<p>Q3. Which of the following programming languages is commonly used for server-side  scripting in web development?</p><hr> 
+<input type="radio" name="q3" >html<br> 
+<input type="radio" name="q3" >css<br> 
+<input type="radio" name="q3" >js<br> 
+<input type="radio" name="q3" id="correct3">php<br> 
+<br> 
+<input type="button" class="next" value="NEXT" onclick="next(3)"> 
+</div> 
+<div class="container "> 
+<p>Q4. Which of the following is used to read a HTML page and render it?</p><hr> <input type="radio" name="q4" >Web server<br> 
+<input type="radio" name="q4" >Web matrix<br>
+<input type="radio" name="q4" id="correct4">Web browser<br> <input type="radio" name="q4" >None of the mentioned<br> 
+<br> 
+<input type="button" class="submit" value="Submit Quiz" onclick="result()"> </div> 
+<script src="script.js"></script> 
+</body> 
+</html> 
+script.js 
+document.getElementsByClassName('container')[0].style.display='block'; function next(id){ 
+document.getElementsByClassName('container')[id-1].style.display='none'; document.getElementsByClassName('container')[id].style.display='block'; } 
+function result(){ 
+var score = 0; 
+if(document.getElementById('correct1').checked){ 
+score++; 
+} 
+if(document.getElementById('correct2').checked){ 
+score++; 
+} 
+if(document.getElementById('correct3').checked){ 
+score++; 
+} 
+if(document.getElementById('correct4').checked){ 
+score++; 
+} 
+alert("Your score is: "+score); 
+} 
+style.css 
+.container{ 
+border: 3px solid #000000; 
+border-radius: 10px; 
+width: 60%; 
+padding: 20px; 
+display: none; 
+margin-left: 20%; 
+}
+.next,.submit{ 
+background-color: #d61a2a;  border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+} 
+h1{ 
+color:#030303; 
+text-align: center; 
+}

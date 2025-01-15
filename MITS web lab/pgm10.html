@@ -1,0 +1,41 @@
+<html> 
+<head> 
+<title>Mouse Over Event Example</title> 
+<style> 
+#container { 
+text-align: center; 
+margin: 50px auto; 
+font-family: Arial, sans-serif; 
+} 
+img { 
+width: 300px; 
+height: auto; 
+transition: opacity 0.5s ease; 
+} 
+p { 
+font-size: 18px; 
+transition: color 0.5s ease; 
+} 
+</style> 
+</head> 
+<body> 
+<div id="container"> 
+<img id="image" src="img3.jpg" alt="Placeholder Image"> 
+<p id="text">Hover over!</p> 
+</div> 
+<script> 
+const image = document.getElementById('image'); 
+const text = document.getElementById('text'); 
+image.addEventListener('mouseover', () => { 
+image.src = 'img1.jpg';
+text.textContent = 'You hovered over the image!'; 
+text.style.color = 'red'; 
+}); 
+image.addEventListener('mouseout', () => { 
+image.src = 'img2.jpg'; 
+text.textContent = 'Hover over me!'; 
+text.style.color = 'black'; 
+}); 
+</script> 
+</body> 
+</html> 
